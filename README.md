@@ -4,17 +4,24 @@ AudioDurations is a PowerShell module for processing audio file duration metadat
 
 ## Installation
 
-To install the AudioDurations module, you can add it to your PowerShell profile for easy access. Here's how you can do it:
-
-1. Clone the repository or download the `AudioDurations.psm1` file.
-2. Move the `AudioDurations.psm1` file to a directory of your choice. For example, `C:\PowerShellModules\AudioDurations\`.
-3. Add the following line to your PowerShell profile script (`$PROFILE`):
-
-```powershell
-Import-Module C:\PowerShellModules\AudioDurations\AudioDurations.psm1
-```
-
-4. Save the profile script and restart your PowerShell session.
+1. Obtain a copy of AudioDurations.
+   - Clone the repository
+     ```powershell
+     git clone https://github.com/DJStompZone/AudioDurations AudioDurations
+     ```
+   Or 
+   - Download the [AudioDurations.psm1](https://raw.githubusercontent.com/DJStompZone/AudioDurations/refs/heads/main/AudioDurations.psm1) file directly.
+   - Move the `AudioDurations.psm1` file to a directory of your choice.
+2. Locate the `AudioDurations.psm1` script. For this example, it is assumed to be in the `C:\PowerShellModules\AudioDurations\` directory.
+3. To import the module for the current PowerShell session:
+    ```powershell
+    Import-Module "C:\PowerShellModules\AudioDurations\AudioDurations.psm1"
+    ```
+4. (Optional) To make AudioDurations available in future sessions, you can add the import statement to your PowerShell profile:
+    ```powershell
+    $AudioDurationsModulePath = "C:\PowerShellModules\AudioDurations\AudioDurations.psm1"
+    echo "`nImport-Module `"$AudioDurationsModulePath`"" | Out-File -FilePath $PROFILE -Encoding ascii -Append
+    ```
 
 ## Usage
 
