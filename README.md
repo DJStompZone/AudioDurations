@@ -23,6 +23,13 @@ AudioDurations is a PowerShell module for processing audio file duration metadat
     echo "`nImport-Module `"$AudioDurationsModulePath`"" | Out-File -FilePath $PROFILE -Encoding ascii -Append
     ```
 
+## For Those In a Hurry
+
+`AudioDurations` adds two functions:
+- `Get-AudioDuration` for a single file
+- `Get-AudioDurations` for a directory or directory tree
+
+
 ## Usage
 
 ### Get the Duration of a Single Audio File
@@ -59,7 +66,7 @@ This module is licensed under the MIT License. See the [LICENSE](LICENSE) file f
 
 <details open>
   <summary>
-    <h2>DJ Stomp</h2>
+    <h3>DJ Stomp</h2>
   </summary>
   <ul>
     <li>
@@ -84,7 +91,3 @@ This module is licensed under the MIT License. See the [LICENSE](LICENSE) file f
     </li>
   </ul>
 </details>
-
-## GitHub Repository
-
-[AudioDurations GitHub Repo](https://github.com/DJStompZone/AudioDurations)
